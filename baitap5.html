@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link ref="stylesheer" href ="main.css">
+    <title>Sản Phẩm</title>
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    }
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 20px auto;
+        display: flex;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: white;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .nav{
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        background: #f1f1f1;
+    }
+    .nav a{
+        margin-right: 10px;
+        text-decoration: none;
+        color:black;
+    }
+    .nav span {
+        margin-right: 10px;
+        color: #999;
+    }
+    .product-image {
+        flex: 1;
+        margin-right: 20px;
+    }
+    .product-image img {
+        max-width: 100%;
+        border-radius: 5px;
+    }
+    .thumbnail {
+        display: flex;
+        margin-top: 10px;
+    }
+    .thumbnail img {
+        width: 80px;
+        height: auto;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+    .thumbnail img:hover {
+        border-color: #ee4d2d;
+    }
+    .product-details {
+        flex: 2;
+        background: white;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .social-links { 
+        margin: 10px 0;
+        font-size: 10px;       
+    }
+    .social-links a {
+        margin-right: 10px;
+        text-decoration: none;
+        color: #ee4d2d;
+    }
+    .social-links img {
+        width: 20px;
+        height: auto;
+    }
+    .rating {
+        color: #FFD700;
+    }
+    .price {
+        font-size: 20px;
+        font-weight: bold;
+        color: #ee4d2d;
+    }
+    .old-price {
+        text-decoration: line-through;
+        color: #999;
+    }
+    .quantity {
+        margin: 10px 0;
+    }
+    .shipping-policy, .return-policy {
+        margin-top: 20px;
+        padding: 10px;
+        background: #f1f1f1;
+        border-radius: 5px;
+    }
+    .color-options, .size-options {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    .color-options label, .size-options label {
+        margin-right: 10px;
+        cursor: pointer;
+        padding: 5px 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+    .selected {
+        border-color: red;
+        background-color: #ffe5e5;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+    }
+    td {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+    .product-info {
+        width: 90%;
+        max-width: 1200px;
+        margin: 20px auto;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: white;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    </style>
+        
+</head>
+<body>
+    <nav>
+        <a href=" http://www.humg.edu.vn. ">Trang chủ </a> >
+        <a href=" http://www.humg.edu.vn. ">Đồ nam </a> >
+        <a href=" http://www.humg.edu.vn. ">UNIQLO </a> >
+        <a href=" http://www.humg.edu.vn. ">Các loại áo nam </a> >
+        <a href=" http://www.humg.edu.vn. ">Áo thun </a> 
+
+    </nav>
+    <div class="container">
+        
+        <div class="product-image">
+            <img id="mainImage" src="https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/473522/item/vngoods_01_473522.jpg?width=750" >
+            
+            <div class="thumbnail">
+
+                <img src="https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/473522/item/vngoods_01_473522.jpg?width=750"  onclick="changeImage('https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/473522/item/vngoods_01_473522.jpg?width=750')">
+                <img src="https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/473522/sub/vngoods_473522_sub1.jpg?width=750"  onclick="changeImage('https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/473522/sub/vngoods_473522_sub1.jpg?width=750')">
+                <img src="https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/473522/sub/vngoods_473522_sub2.jpg?width=750"  onclick="changeImage('https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/473522/sub/vngoods_473522_sub2.jpg?width=750')">
+                <img src="https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/473522/sub/vngoods_473522_sub7.jpg?width=750"  onclick="changeImage('https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/473522/sub/vngoods_473522_sub7.jpg?width=750')">
+            </div>
+            <div class="social-links">
+                <h3>Chia sẻ:
+                <a href="http://www.humg.edu.vn." target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/1024px-2023_Facebook_icon.svg.png" alt="Facebook" ></a>
+                <a href="http://www.humg.edu.vn." target="_blank"><img src=" https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"  alt="Instagram"></a>
+                <a href="http://www.humg.edu.vn." target="_blank"><img src="https://inkythuatso.com/uploads/images/2021/10/logo-messenger-inkythuatso-2-01-30-15-47-51.jpg" alt="Messenger" ></a>
+            </h3>
+            </div>
+            
+        </div>
+        <div class="product-details">
+            <h1>UT KENSHI YONEZU Áo Thun Ngắn Tay (Ghibli)</h1>
+            <div class="rating">
+                <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span> 4.0 (200 lượt đánh giá)
+            </div>
+            <p class="price">Giá: <span class="old-price">500.000 VNĐ</span> 350.000 VNĐ
+            <button style=" background-color: #ee4d2d; color: white; border: none; border-radius: 5px;">Giảm 30%</button>
+            </p>
+            <div class="shipping-policy">
+                <strong>Hình thức vận chuyển:</strong> Giao hàng nhanh trong 3-5 ngày.
+            </div>
+            <div class="return-policy">
+                <strong>Chính sách trả hàng:</strong> Trả hàng trong vòng 30 ngày nếu sản phẩm bị lỗi.
+            </div>
+            <div>
+                <strong>Màu sắc:</strong>
+                <div class="color-options">
+                    <label onclick="toggleSelect(this)">
+                        <input type="radio" name="color" value="green" style="display:none;"> QR-xanh than
+                    </label>
+                    <label onclick="toggleSelect(this)">
+                        <input type="radio" name="color" value="black" style="display:none;"> QR-Đen
+                    </label>
+                    <label onclick="toggleSelect(this)">
+                        <input type="radio" name="color" value="light-gray" style="display:none;"> QR-ghi sáng
+                    </label>
+                    <label onclick="toggleSelect(this)">
+                        <input type="radio" name="color" value="dark-gray" style="display:none;"> QR-Xám đậm
+                    </label>
+                    <label onclick="toggleSelect(this)">
+                        <input type="radio" name="color" value="beige" style="display:none;"> QR-Kem
+                    </label>
+                </div>
+            </div>
+            <div>
+                <strong>Kích thước:</strong>
+                <div class="size-options">
+                    <label onclick="toggleSelect(this)">
+                        <input type="radio" name="size" value="28" style="display:none;"> 28
+                    </label>
+                    <label onclick="toggleSelect(this)">
+                        <input type="radio" name="size" value="29" style="display:none;"> 29
+                    </label>
+                    <label onclick="toggleSelect(this)">
+                        <input type="radio" name="size" value="30" style="display:none;"> 30
+                    </label>
+                    <label onclick="toggleSelect(this)">
+                        <input type="radio" name="size" value="31" style="display:none;"> 31
+                    </label>
+                    <label onclick="toggleSelect(this)">
+                        <input type="radio" name="size" value="32" style="display:none;"> 32
+                    </label>    
+                    <label onclick="toggleSelect(this)">
+                        <input type="radio" name="size" value="33" style="display:none;"> 33
+                    </label>
+                    <label onclick="toggleSelect(this)">
+                        <input type="radio" name="size" value="34" style="display:none;"> 34
+                    </label>    
+                    <label onclick="toggleSelect(this)">
+                        <input type="radio" name="size" value="35" style="display:none;"> 35
+                    </label>
+                    <label onclick="toggleSelect(this)">
+                        <input type="radio" name="size" value="36" style="display:none;"> 36
+                    </label>
+
+                </div>
+            </div>
+            <div class="quantity">
+                <label for="quantity">Số lượng:</label>
+                <button onclick="changeQuantity(-1)">-</button>
+                <input type="number" id="quantity" value="1" min="1" style="width: 60px;">
+                <button onclick="changeQuantity(1)">+</button>
+            </div>
+            <button style="margin-top: 20px; padding: 10px 15px; background-color: #ee4d2d; color: white; border: none; border-radius: 5px;">Thêm vào giỏ hàng</button>
+            <button style="margin-top: 20px; padding: 10px 15px; background-color: #ee4d2d; color: white; border: none; border-radius: 5px;">Mua Ngay</button>            
+        </div>
+    </div>
+    <div class="product-info">
+        <strong>Thông tin chung:</strong>
+        <table>
+            <tr>
+                <td>Mã sản phẩm:</td>
+                <td>473522</td>
+            </tr>
+            <tr>
+                <td>Chất liệu:</td>
+                <td>100% cotton</td>
+            </tr>
+            <tr>
+                <td>Thương hiệu:</td>
+                <td>UNIQLO</td>
+            </tr>
+            <tr>
+                <td>Xuất xứ:</td>
+                <td> Việt Nam</td>
+            </tr>
+            <tr>
+                <td>Hướng dẫn bảo quản:</td>
+                <td>Giặt lạnh, không sử dụng chất tẩy mạnh.</td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        function changeImage(image) {
+            document.getElementById('mainImage').src = image;
+        }
+        function toggleSelect(label) {
+            const parent = label.parentNode;
+            const labels = parent.querySelectorAll('label');           
+            labels.forEach(lbl => {
+                lbl.classList.remove('selected');
+            });           
+            label.classList.add('selected');
+        }
+        function changeQuantity(change) {
+            const quantityInput = document.getElementById('quantity');
+            let currentValue = parseInt(quantityInput.value);
+            currentValue = Math.max(1, currentValue + change); 
+            quantityInput.value = currentValue;
+        }
+    </script>
+</body>
+</html>
